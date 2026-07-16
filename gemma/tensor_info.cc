@@ -132,7 +132,6 @@ void TensorInfoRegistry::AddModelTensors(const ModelConfig& config) {
             .axes = {0, 1},
             .shape = {config.vocab_size,
                       config.num_layers * config.ple_dim},
-            .min_size = Type::kBF16,
         });
     Add(no_suffix,
         {
